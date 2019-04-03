@@ -53,3 +53,43 @@ function generate(){var linkDL=document.getElementById("download"),btn=document.
         })
       }
     })
+var min=8;
+var max=18;
+function zoominLetter() {
+var p = document.getElementsByTagName(‘p’);
+for(i=0;i<p.length;i++) {
+if(p[i].style.fontSize) {
+var s = parseInt(p[i].style.fontSize.replace(“px”,””));
+} else {
+var s = 12;
+}
+if(s!=max) {
+s += 1;
+}
+p[i].style.fontSize = s+”px”
+}
+}
+function zoomoutLetter() {
+var p = document.getElementsByTagName(‘p’);
+for(i=0;i<p.length;i++) {
+if(p[i].style.fontSize) {
+var s = parseInt(p[i].style.fontSize.replace(“px”,””));
+} else {
+var s = 12;
+}
+if(s!=min) {
+s -= 1;
+}
+p[i].style.fontSize = s+”px”
+}
+}
+$(document).ready(function() {
+$(“.tabs-menu a”).click(function(event) {
+event.preventDefault();
+$(this).parent().addClass(“current”);
+$(this).parent().siblings().removeClass(“current”);
+var tab = $(this).attr(“href”);
+$(“.tab-content”).not(tab).css(“display”, “none”);
+$(tab).fadeIn();
+});
+});
