@@ -27,15 +27,7 @@ function generate(){var linkDL=document.getElementById("download"),btn=document.
         $('html').click(function() {
           $('.overlay-dialog').addClass('hidden')
         })
-      })
-      $('.blog-cmt').click( function() { 
-        $('#comments').removeClass('hidden')
-        $('#fb-comments').addClass('hidden')
-      })          
-      $('.fb-cmt').click( function() {
-        $('#fb-comments').removeClass('hidden')
-        $('#comments').addClass('hidden') 
-      })         
+      })    
       var postEl = document.getElementsByClassName('social-wrapper');
       var postCount = postEl.length;
       for (i = 0; i < postCount; i++) {
