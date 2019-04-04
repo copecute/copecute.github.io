@@ -444,12 +444,6 @@ a.postviews:hover,a.tt_tg:hover,a.comment-count:hover,.post-icons:hover,a.drops:
 [data-tooltip]:before{position:absolute;bottom:-50%;left:450%;margin-bottom:5px;margin-left:-45px;padding:7px;width:80px;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;background-color:#000;color:#ffffff;content:attr(data-tooltip);text-align:center;font-size:13px;line-height:1.2}
 [data-tooltip]:after{position:absolute;bottom:30%;left:115%;margin-left:-5px;width:0;border-top: 5px solid transparent;border-right: 5px solid #000;border-bottom: 5px solid transparent;border-left: 5px solid transparent;content:" ";font-size:0;line-height:0}
 [data-tooltip]:hover:before,[data-tooltip]:hover:after{visibility:visible;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);opacity:1}
-#fb-comments{margin-top:15px}
-.blog-cmt,.fb-cmt{border-radius:3px;color:#ffffff;display:inline-block;height:20px;line-height:22px;width:75px;text-align:center;text-transform:uppercase;white-space:nowrap;font-size:11px;cursor:pointer}
-.blog-cmt{background:#ff5722}
-.fb-cmt{background:#4080ff}
-.comment-button .title{border-radius:3px;color:#ffffff;display:inline-block;height:20px;line-height:22px;padding-left:5px;padding-right:5px;text-align:center;text-transform:uppercase;white-space:nowrap;font-size:11px;background:#7577a9}
-.comment-button{}
 .backlinks-container
 {border-radius:3px;display:inline-block;height:20px;line-height:22px;padding:0 5px;text-align:center;text-transform:uppercase;white-space:nowrap;font-size:11px;background:#333}
 .backlinks-container a{color:#fff}
