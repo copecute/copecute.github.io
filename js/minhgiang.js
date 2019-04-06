@@ -1,1 +1,2 @@
 console.log('%cPowered by Đàm Minh Giang 😎\n==> https://fb.com/giang.apk', 'font:2.5em Roboto;color:#ff0000');
+function toggleOverlay(){var e=document.getElementById(&quot;overlay&quot;),l=document.getElementById(&quot;jQsearchgiangv3&quot;);e.style.opacity=1,&quot;block&quot;==e.style.display?(e.style.display=&quot;none&quot;,l.style.display=&quot;none&quot;):(e.style.display=&quot;block&quot;,l.style.display=&quot;block&quot;,document.forms.jq_search_minhgiang_v3.elements.s.focus(500))}
