@@ -819,22 +819,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   white-space: nowrap;
 }
 .lg-outer .lg-item {
+  background: url("https://cdn.jsdelivr.net/lightgallery/1.3.9/img/loading.gif") no-repeat scroll center center transparent;
   display: none !important;
-}
-.lg-outer .lg-item:before {
-    content: '';
-    box-sizing: border-box;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    border: 3px solid hsl(0,0%,53.3%);
-    border-right-color: transparent;
-    animation: spinner .9s linear infinite;
-    -webkit-animation: spinner .9s ease-in-out infinite;
-}
 .lg-outer.lg-css3 .lg-prev-slide, .lg-outer.lg-css3 .lg-current, .lg-outer.lg-css3 .lg-next-slide {
   display: inline-block !important;
 }
