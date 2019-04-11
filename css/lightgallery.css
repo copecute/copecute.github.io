@@ -819,7 +819,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   white-space: nowrap;
 }
 .lg-outer .lg-item {
-  background: url("https://loading.io/spinners/pinkpig/index.pink-pig-ajax-loader.svg") no-repeat scroll center center transparent;
+  background: url("../svgs/loading-pinkypig.svg") no-repeat scroll center center transparent;
   display: none !important;
 }
 .lg-outer.lg-css3 .lg-prev-slide, .lg-outer.lg-css3 .lg-current, .lg-outer.lg-css3 .lg-next-slide {
