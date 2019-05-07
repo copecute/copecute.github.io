@@ -278,7 +278,7 @@ form[name=contact-form] label:nth-of-type(3):after{content:"(3)"}
 .sidebar-wrapper h3{font:bold 16px Roboto,"Helvetica Neue",Helvetica,sans-serif;text-transform:uppercase;color:#3c4043;text-align:left;padding:15px 0 10px 0;margin:0 15px 15px 15px;border-bottom:2px solid rgba(0,0,0,0.12);position:relative}
 .sidebar-wrapper h3 span{border-bottom:2px solid #7577a9;padding:15px 0 10px 0}
 @media only screen and (max-width: 800px){.MD-StoTop{bottom:45px!important}}
-.MD-StoTop{background:#ddd;bottom:30px;cursor:pointer;position:fixed;right:-9px;z-index:7}
+.MD-StoTop{background:#ddd;bottom:-3px;cursor:pointer;position:fixed;right:-9px;z-index:7}
 .MD-StoTop svg{fill:hsla(0,0%,6.7%,.4)}
 .MD-StoTop:hover{background:rgb(230,230,230)}
 .g-profile{font-weight:bold}
