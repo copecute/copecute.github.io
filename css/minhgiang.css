@@ -64,7 +64,6 @@ svg{fill:hsl(0,0%,53.3%)}
 .modal-dialog-content{font-size:15px;font-weight:500;line-height:1.6;color:#3c4043}
 .modal-dialog-buttons{margin-top:8px}
 .modal-dialog-buttons button{background:0;border:0;outline:none;color:#1155cc;cursor:pointer;text-transform:uppercase;font-weight:bold}
-.dialog-cookie{display:none}
 .bg_Se{line-height:36px;position:relative}
 .bg_Se .gb_Se{display:inline-block;position:relative;min-width:570px;background:rgba(0,0,0,0.04);border:1px solid rgba(0,0,0,0);-webkit-border-radius:21px;border-radius:21px;-webkit-transition:background 100ms ease-in,width 100ms ease-out;transition:background 100ms ease-in,width 100ms ease-out}
 .bg_Se .gb_Se.gb_af{background:#ffffff;border:1px solid rgba(0,0,0,0.12);-webkit-box-shadow:0 1px 1px rgba(0,0,0,0.24);box-shadow:0 1px 1px rgba(0,0,0,0.24)}
