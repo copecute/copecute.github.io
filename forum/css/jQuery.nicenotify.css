@@ -1,0 +1,81 @@
+#HPs {
+  z-index: 50000;
+  position: fixed; }
+  #HPs.default {
+    top: 10px;
+    right: 10px; }
+  #HPs.tl {
+    top: 10px;
+    left: 10px; }
+  #HPs.tr {
+    top: 10px;
+    right: 10px; }
+  #HPs.bl {
+    bottom: 10px;
+    left: 10px; }
+  #HPs.br {
+    bottom: 10px;
+    right: 10px; }
+  #HPs.tc {
+    top: 10px;
+    right: 10px;
+    left: 10px; }
+  #HPs.bc {
+    bottom: 10px;
+    right: 10px;
+    left: 10px; }
+  #HPs.tc .HP, #HPs.bc .HP {
+    margin-left: auto;
+    margin-right: auto; }
+
+.HP {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  position: relative;
+  border-radius: 4px;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out; }
+  .HP.HP-incoming {
+    opacity: 0;
+    filter: alpha(opacity=0); }
+  .HP.HP-outgoing {
+    opacity: 0;
+    filter: alpha(opacity=0); }
+  .HP.HP-small {
+    width: 200px;
+    padding: 5px;
+    margin: 5px; }
+  .HP.HP-medium {
+    width: 250px;
+    padding: 10px;
+    margin: 10px; }
+  .HP.HP-large {
+    width: 300px;
+    padding: 15px;
+    margin: 15px; }
+  .HP.HP-default {
+    color: #FFF;
+    background: #7f8c8d; }
+  .HP.HP-error {
+    color: #FFF;
+    background: #C0392B; }
+  .HP.HP-notice {
+    color: #FFF;
+    background: #2ECC71; }
+  .HP.HP-warning {
+    color: #FFF;
+    background: #F39C12; }
+  .HP .HP-close {
+    cursor: pointer;
+    float: right;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    font-family: helvetica, verdana, sans-serif; }
+  .HP .HP-title {
+    font-size: 18px;
+    line-height: 24px; }
+  .HP .HP-message {
+    font-size: 14px;
+    line-height: 18px; }
