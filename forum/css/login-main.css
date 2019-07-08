@@ -238,6 +238,7 @@ height:100%;
   display: flex;
   flex-wrap: wrap;
   padding: 65px 65px 40px 65px;
+  overflow: auto;
 }
 
 .login100-form-title {
