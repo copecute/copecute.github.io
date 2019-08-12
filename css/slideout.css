@@ -9,7 +9,7 @@ body {
 }
 
 body,
-.panel {
+.panelslo {
   background-color: #fff;
 }
 
@@ -68,25 +68,25 @@ a {
   padding: 10px 20px;
 }
 
-.panel {
+.panelslo {
   text-align: center;
   padding-top: 5px;
   min-height: 100%;
 }
 
-#mocha {
+#mochaslo {
   text-align: left;
   margin:0 !important;
 }
 
-#mocha-stats {
+#mochaslo-stats {
   top: 70px;
 }
 
 /**
  * Header
  */
-.panel-header {
+.panelslo-header {
   margin: 120px auto 55px;
 }
 
