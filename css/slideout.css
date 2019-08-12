@@ -13,7 +13,7 @@ body,
   background-color: #fff;
 }
 
-.menu {
+.menuslo {
   background-color: #1D1F20;
   background-image: linear-gradient(145deg, #1D1F20, #404348);
 }
@@ -23,31 +23,31 @@ a {
   text-decoration: none;
 }
 
-.menu a {
+.menuslo a {
   color: #fff;
 }
 
-.menu a:hover {
+.menuslo a:hover {
   text-decoration: underline;
 }
 
-.menu-header {
+.menuslo-header {
   border-bottom: 1px solid #2a2d2f;
   padding: 20px;
   background-size: 32px;
 }
 
-.menu-header-title {
+.menuslo-header-title {
   font-weight: 400;
   letter-spacing: 0.5px;
   margin: 0;
 }
 
-.menu-section {
+.menuslo-section {
   margin: 25px 0;
 }
 
-.menu-section-title {
+.menuslo-section-title {
   text-transform: uppercase;
   color: #85888d;
   font-weight: 200;
@@ -57,13 +57,13 @@ a {
   margin:0;
 }
 
-.menu-section-list {
+.menuslo-section-list {
   padding:0;
   margin: 10px 0;
   list-style:none;
 }
 
-.menu-section-list a {
+.menuslo-section-list a {
   display: block;
   padding: 10px 20px;
 }
@@ -90,7 +90,7 @@ a {
   margin: 120px auto 55px;
 }
 
-.title {
+.titleslo {
   font-size: 3.2em;
   line-height: 1em;
   margin: 0 0 15px;
@@ -107,7 +107,6 @@ a {
   top: 12px;
   left: 12px;
   outline:none;
-  background: url('assets/menu.png') no-repeat center;
   width: 50px;
   height: 50px;
 }
@@ -115,7 +114,7 @@ a {
 /**
  * Boxes
  */
-.box {
+.boxslo {
   border: 1px solid #4b5;
   border-radius: 4px;
   text-align: left;
@@ -123,8 +122,8 @@ a {
   position: relative;
 }
 
-.box:before,
-.box:after {
+.boxslo:before,
+.boxslo:after {
   content: ' ';
   display: inline-block;
   width: 1px;
@@ -134,15 +133,15 @@ a {
   left: 50%;
 }
 
-.box:before {
+.boxslo:before {
   top: -50px;
 }
 
-.box:after {
+.boxslo:after {
   bottom: -50px;
 }
 
-.box-title {
+.boxslo-title {
   margin: 0;
   padding:10px 20px;
   border-bottom: 1px solid #4b5;
@@ -151,7 +150,7 @@ a {
   font-weight: 400;
 }
 
-.box-content {
+.boxslo-content {
   padding:20px;
   background-color: #f8f8f8;
 }
@@ -171,7 +170,7 @@ a {
     width: 455px;
   }
 
-  .title {
+  .titleslo {
     font-size: 4.2em;
   }
 }
@@ -180,7 +179,7 @@ a {
  * Large Screens
  */
 @media all and (min-width: 54em) {
-  .box {
+  .boxslo {
     width: 70%;
     max-width: 1200px;
     margin: 50px auto;
@@ -190,15 +189,15 @@ a {
 /**
  * Footer
  */
-.panel-footer {
+.panelslo-footer {
   margin: 10px auto 20px;
 }
 
-.panel-footer p {
+.panelslo-footer p {
   padding-bottom: 20px;
 }
 
-.heart {
+.heartslo {
   font-style: normal;
   font-weight: 500;
   color: #c0392b;
