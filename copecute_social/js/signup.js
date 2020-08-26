@@ -1,10 +1,4 @@
 "use strict";
-
-/*! signup.js | Friendkit | © Css Ninja. 2019-2020 */
-
-/* ==========================================================================
-Signup Process JS
-========================================================================== */
 Dropzone.autoDiscover = false;
 $(document).ready(function () {
   "use strict";
@@ -155,7 +149,7 @@ $(document).ready(function () {
 
   $('#signup-finish').on('click', function () {
     var $this = $(this);
-    var url = '/feed.html';
+    var url = '/home.html';
     $this.addClass('is-loading');
     setTimeout(function () {
       window.location = url;
