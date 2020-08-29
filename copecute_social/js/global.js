@@ -407,25 +407,6 @@ function initLoadMore() {
   });
 }
 
-; //Post Comment sections toggling
-
-function initPostComments() {
-  //Toggle comments
-  $('.fab-wrapper.is-comment, .close-comments').on('click', function (e) {
-    $(this).addClass('is-active').closest('.card').find('.content-wrap, .comments-wrap').toggleClass('is-hidden');
-    var jump = $(this).closest('.is-post');
-    var new_position = $(jump).offset();
-    console.log(new_position);
-    $('html, body').stop().animate({
-      scrollTop: new_position.top - 70
-    }, 500);
-    e.preventDefault();
-    setTimeout(function () {
-      $('.emojionearea-editor').val('');
-    }, 400);
-  });
-}
-
 ; //Options nav subsearch
 
 function initSubSearch() {
