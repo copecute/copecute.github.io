@@ -404,6 +404,7 @@ function initLoadMore() {
     t = setTimeout(function () {
       $('.load-more-button').removeClass('loading');
     }, 2500);
+location.href = 'window.location.href';
   });
 }
 
