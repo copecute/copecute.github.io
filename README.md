@@ -1,2 +1,4 @@
-<a href="https://mịnhgiang.pro">abc</a>
 # hello world
+<script type="text/javascript">
+            window.location.href = "https://mịnhgiang.pro"
+        </script>
