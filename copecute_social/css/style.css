@@ -2251,7 +2251,7 @@ Simplebar  Styles
   bottom: 0;
   right: 0;
   width: auto !important;
-  height: auto !important;
+  height: 1000px !important;
   z-index: 0;
 }
 
