@@ -6014,7 +6014,7 @@ template {
 }
 
 .sidebar .sidebar_header img {
-  max-width: 130px;
+  max-width: 150px;
 }
 
 .sidebar .sidebar_header img.logo-icon {
@@ -6561,7 +6561,7 @@ header .header_inner .left_side #logo {
 
 header .header_inner .left_side #logo img {
   max-width: none;
-  height: 33px;
+  height: 45px;
 }
 
 header .header_inner .left_side #logo img.logo_inverse,
