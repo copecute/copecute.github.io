@@ -7224,7 +7224,7 @@ header .header_inner .right_side {
   position: absolute;
   top: 12px;
   width: 40px;
-  right: 60px;
+  right: 16px;
   height: 40px;
   color: #8a8989;
   z-index: 100;
@@ -8186,7 +8186,7 @@ input[type="button"].dark1, input[type="submit"].dark1 {
     top: 12px;
     bottom: auto;
     width: 40px;
-    right: 16px;
+    right: 60px;
     height: 40px;
     background: transparent;
     color: #8a8989;
