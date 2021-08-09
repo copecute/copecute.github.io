@@ -9230,7 +9230,7 @@ body.story-active header .header_widgets .is_link {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
   .header_search {
     position: absolute;
     width: 85%;
@@ -9238,6 +9238,9 @@ body.story-active header .header_widgets .is_link {
   .header_search input {
     width: 100%;
     min-width: 100%;
+  }
+  .header-search-icon {
+    display: block !important;
   }
   .show-searchbox .header_search {
     display: block;
@@ -9247,11 +9250,6 @@ body.story-active header .header_widgets .is_link {
   }
   .show-searchbox .header-search-icon::before {
     content: '\ea02';
-  }
-}
-@media (max-width: 1024px) {
-    .header-search-icon {
-    display: block !important;
   }
 }
 
