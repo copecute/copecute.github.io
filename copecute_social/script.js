@@ -11,7 +11,7 @@ const vm = new Vue({
   },
   computed: {
     roomUrl: function() {
-      return `https://${location.hostname}?room=${this.roomId}`;
+      return `https://${location.hostname}/copecute_social/call?room=${this.roomId}`;
     }
   },
   async mounted() {
