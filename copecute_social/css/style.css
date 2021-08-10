@@ -9175,8 +9175,6 @@ body.story-active header .header_widgets .is_link {
     max-height: 75vh  !important;
   }
   .header_dropdown.profile_dropdown {
-    -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px -300px 0px 300px;
-            box-shadow: rgba(0, 0, 0, 0.24) 0px -300px 0px 300px;
     padding: 10px 25px !important;
   }
   .dropdown_cart .dropdown_cart_scrollbar {
