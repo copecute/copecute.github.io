@@ -11,7 +11,7 @@ const vm = new Vue({
   },
   computed: {
     roomUrl: function() {
-      return `https://cdn.minhgiang.pro/video-call.php?room=${this.roomId}`;
+      return `https://cdn.minhgiang.pro/copecute_social/index.html?room=${this.roomId}`;
     }
   },
   async mounted() {
