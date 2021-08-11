@@ -1,12 +1,3 @@
-/*! tailwindcss v2.0.4 | MIT License | https://tailwindcss.com */
-
-/*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
-
-/*
-Document
-========
-*/
-
 /**
 Use a better box model (opinionated).
 */
@@ -506,7 +497,6 @@ audio,
 iframe,
 embed,
 object {
-  display: block;
   vertical-align: middle;
 }
 
