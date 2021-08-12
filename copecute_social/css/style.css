@@ -8153,7 +8153,7 @@ input[type="button"].dark1, input[type="submit"].dark1 {
   visibility: hidden;
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1025px){
 .user_status.status_online {
   top: 35px!important;
   left: 35px!important;
