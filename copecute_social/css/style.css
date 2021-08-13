@@ -252,7 +252,6 @@ body .button i.icon-material-outline-arrow-right-alt {
 /* Forms Reset & Styles
 ------------------------------------- */
 select, textarea, input, input[type="text"], input[type="password"], input[type="email"], input[type="number"] {
-  height: 48px;
   line-height: 48px;
   padding: 0 20px;
   outline: none;
