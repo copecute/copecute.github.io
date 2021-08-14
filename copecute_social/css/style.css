@@ -9151,6 +9151,8 @@ body.story-active header .header_widgets .is_link {
     width: 100%;
   }
   .header_widgets {
+        top: 0;
+    z-index: 101;
     width: 100%;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
