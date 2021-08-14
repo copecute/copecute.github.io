@@ -9170,8 +9170,6 @@ body.story-active header .header_widgets .is_link {
   .header_dropdown {
     right: -15px !important;
     width: calc(100% + 31px) !important;
-    bottom: -275px !important;
-    top: auto !important;
     -webkit-box-shadow: none;
             box-shadow: none;
     border: 0;
