@@ -9151,13 +9151,11 @@ body.story-active header .header_widgets .is_link {
     width: 100%;
   }
   .header_widgets {
-    position: fixed;
     width: 100%;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding-right: 0;
-    bottom: 0;
     height: 56px;
     padding: 0 18px !important;
     background: white;
