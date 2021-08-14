@@ -8018,6 +8018,12 @@ header .header_inner .right_side {
   }
 }
 
+@media screen and (max-width: 1025px){
+  .message-reply {
+  position: fixed;
+    width: 100%;
+    bottom: 0;}
+}
 @media (max-width: 768px) {
   .messages-container-inner {
     display: block;
