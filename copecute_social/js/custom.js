@@ -132,3 +132,21 @@
 
     // Whenever the user explicitly chooses to respect the OS preference
     localStorage.removeItem('theme')
+
+   <!-- chuyển darkmode và lưu localStorage -->
+    (function () {
+        var nightMode = document.querySelector('#night-mode');
+        if (!nightMode) return;
+        let mode = localStorage.getItem('darkmode');
+        if(mode=='true'){
+          document.documentElement.classList.add('dark');
+          nightMode.checked = true;
+        }
+
+        nightMode.addEventListener('click', function (e) {
+            e.preventDefault();
+            let mode = document.documentElement.classList.toggle('dark');
+            // save mode 
+            localStorage.setItem('darkmode', mode);
+        });
+    })();
