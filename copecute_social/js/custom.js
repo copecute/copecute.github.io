@@ -117,36 +117,49 @@
     })(this.jQuery);
     
 
-    // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        document.documentElement.classList.add('dark')
+// On page load or when changing themes, best to add inline in `head` to avoid FOUC
+if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    document.documentElement.classList.add('dark');
+} else {
+    document.documentElement.classList.remove('dark');
+}
+
+// Whenever the user explicitly chooses light mode
+document.querySelector('#light-mode').addEventListener('click', function () {
+    localStorage.theme = 'light';
+    document.documentElement.classList.remove('dark');
+});
+
+// Whenever the user explicitly chooses dark mode
+document.querySelector('#dark-mode').addEventListener('click', function () {
+    localStorage.theme = 'dark';
+    document.documentElement.classList.add('dark');
+});
+
+// Whenever the user explicitly chooses to respect the OS preference
+document.querySelector('#auto-mode').addEventListener('click', function () {
+    localStorage.removeItem('theme');
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.classList.add('dark');
     } else {
-        document.documentElement.classList.remove('dark')
+        document.documentElement.classList.remove('dark');
+    }
+});
+
+// Toggle dark mode and save to localStorage by copecute
+(function () {
+    var nightMode = document.querySelector('#night-mode');
+    if (!nightMode) return;
+    let mode = localStorage.getItem('darkmode');
+    if(mode=='true'){
+      document.documentElement.classList.add('dark');
+      nightMode.checked = true;
     }
 
-    // Whenever the user explicitly chooses light mode
-    localStorage.theme = 'light'
-
-    // Whenever the user explicitly chooses dark mode
-    localStorage.theme = 'dark'
-
-    // Whenever the user explicitly chooses to respect the OS preference
-    localStorage.removeItem('theme')
-
-   <!-- chuyển darkmode và lưu localStorage -->
-    (function () {
-        var nightMode = document.querySelector('#night-mode');
-        if (!nightMode) return;
-        let mode = localStorage.getItem('darkmode');
-        if(mode=='true'){
-          document.documentElement.classList.add('dark');
-          nightMode.checked = true;
-        }
-
-        nightMode.addEventListener('click', function (e) {
-            e.preventDefault();
-            let mode = document.documentElement.classList.toggle('dark');
-            // save mode 
-            localStorage.setItem('darkmode', mode);
-        });
-    })();
+    nightMode.addEventListener('click', function (e) {
+        e.preventDefault();
+        let mode = document.documentElement.classList.toggle('dark');
+        // save mode 
+        localStorage.setItem('darkmode', mode);
+    });
+})();
