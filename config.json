@@ -1,0 +1,240 @@
+{
+  "app": {
+    "author": "indrawan@aleph-labs.com",
+    "defaultImage": "https://1.bp.blogspot.com/-QYP55lDT3y8/XdEL28HRsfI/AAAAAAAACqw/My15c96Og8022Jc6HVfPFf1gBku8PmA_wCLcBGAsYHQ/s1600/no-image-codepelajar.png",
+    "logo": "https://avatars.githubusercontent.com/u/45938169?v=4"
+  },
+  "blogger": {
+    "blogId": "6455467253778633713",
+    "blogUrl": "https://0888889530.blogspot.com"
+  },
+  "google": {
+    "apiKey": "AIzaSyB2MpzH-Gq6fnWuUnoI2PH2sPMTkGIQ9b0",
+    "cse": {
+      "url": "https://cse.google.com/cse.js?cx=005178091281942032751:rimwwhz9ofx"
+    },
+    "firebase": {
+      "apiKey": "AIzaSyCWmOlYDKxGYzg0R6Ac2nU4veTFIo8ObFw",
+      "authDomain": "react-experiment-itodev.firebaseapp.com",
+      "projectId": "react-experiment-itodev",
+      "storageBucket": "react-experiment-itodev.appspot.com",
+      "messagingSenderId": "621034902241",
+      "appId": "1:621034902241:web:b9dfe3eb87d447880f9da0"
+    }
+  },
+  "disqus": {
+    "username": "codepelajar"
+  },
+  "addThis": {
+    "id": "5dd79989c6588238"
+  },
+  "menu": {
+    "header": [
+      {
+        "id": 1,
+        "title": "Latest",
+        "url": "/latest"
+      },
+      {
+        "id": 2,
+        "title": "Projects",
+        "url": "/projects"
+      },
+      {
+        "id": 3,
+        "title": "Services",
+        "url": "/services"
+      },
+      {
+        "id": 4,
+        "title": "Contact",
+        "url": "/contact"
+      }
+    ]
+  },
+  "author": [
+    {
+      "id": "15951301036007458105",
+      "name": "Indrawan Lisanto",
+      "email": "indrawan@aleph-labs.com",
+      "title": "Front-End Developer",
+      "username": "itokun99",
+      "nickname": "ito",
+      "profilePic": "https://avatars.githubusercontent.com/u/45938169?v=4",
+      "coverPic": "",
+      "socialLinks": [
+        {
+          "id": 1,
+          "name": "github",
+          "title": "Github",
+          "url": "https://github.com/itokun99",
+          "username": "itokun99"
+        },
+        {
+          "id": 2,
+          "name": "instagram",
+          "title": "Instagram",
+          "url": "https://www.instagram.com/mr.ito__",
+          "username": "mr.ito__"
+        },
+        {
+          "id": 3,
+          "name": "linkedin",
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/indrawan-lisanto/",
+          "username": "Indrawan Lisanto"
+        }
+      ]
+    },
+    {
+      "id": "08567324068406956261",
+      "name": "Muhammad Irva",
+      "email": "justirva@gmail.comm",
+      "title": "Front-End Developer",
+      "username": "justirva09",
+      "nickname": "irva",
+      "profilePic": "https://avatars.githubusercontent.com/u/48151470?v=4",
+      "coverPic": "",
+      "socialLinks": [
+        {
+          "id": 1,
+          "name": "github",
+          "title": "Github",
+          "url": "https://github.com/justirva09",
+          "username": "justirva09"
+        },
+        {
+          "id": 2,
+          "name": "instagram",
+          "title": "Instagram",
+          "url": "https://www.instagram.com/justirva99",
+          "username": "justirva99"
+        },
+        {
+          "id": 3,
+          "name": "linkedin",
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/justirva",
+          "username": "Muhammad Irva"
+        }
+      ]
+    }
+  ],
+  "sectionConfig": {
+    "homepage": {
+      "top": [
+        {
+          "id": 1,
+          "title": "New / Updated from Creator",
+          "type": "featured-post",
+          "show": true
+        },
+        {
+          "id": 2,
+          "title": "Our Templates",
+          "type": "labeled-post",
+          "data": {
+            "label": "Template"
+          },
+          "show": true
+        },
+        {
+          "id": 3,
+          "title": "Programming Tips",
+          "type": "labeled-post",
+          "data": {
+            "label": "Tutorial"
+          },
+          "show": true
+        }
+      ],
+      "main": [
+        {
+          "id": 1,
+          "title": "Recently Published",
+          "type": "latest-post",
+          "show": true
+        }
+      ],
+      "side": [
+        {
+          "id": 1,
+          "title": "Ads Banner",
+          "type": "ads-banner",
+          "show": true,
+          "data": [
+            {
+              "id": 1,
+              "type": "single",
+              "image": "",
+              "url": "",
+              "content": ""
+            },
+            {
+              "id": 2,
+              "type": "multiple",
+              "data": [
+                {
+                  "id": 1,
+                  "image": "",
+                  "url": ""
+                },
+                {
+                  "id": 2,
+                  "image": "",
+                  "url": ""
+                },
+                {
+                  "id": 3,
+                  "image": "",
+                  "url": ""
+                },
+                {
+                  "id": 4,
+                  "image": "",
+                  "url": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Popular Tags",
+          "type": "label-list",
+          "show": true
+        }
+      ]
+    },
+    "postDetail": {
+      "side": [
+        {
+          "id": 3,
+          "title": "Related Posts",
+          "type": "related-post",
+          "show": true
+        },
+        {
+          "id": 4,
+          "title": "Popular Tags",
+          "type": "label-list",
+          "show": true
+        }
+      ],
+      "main": [
+        {
+          "id": 1,
+          "title": "Blogger Post Detail",
+          "type": "blogger-post-detail",
+          "show": true
+        },
+        {
+          "id": 2,
+          "title": "Comment",
+          "type": "disqus-comment",
+          "show": true
+        }
+      ]
+    }
+  }
+}
