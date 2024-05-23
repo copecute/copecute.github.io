@@ -1,7 +1,7 @@
 {
   "background_color": "#1A73E8",
   "description": "Cập nhật tin tức mới và nóng nhất về Đời sống - Xã hội, Kinh tế, Thế giới, Thể thao, Giải trí, Công nghệ và nhiều lĩnh vực khác…",
-  "dir": "ltr",
+  "dir": "auto",
   "display": "fullscreen",
   "name": "Trang Tin Tức Tổng Hợp - Minh Giang Blog",
   "orientation": "any",
@@ -10,7 +10,7 @@
   "start_url": "/?utm_source=homescreen",
   "theme_color": "#1A73E8",
   "icons": [
-      {
+    {
       "src": "//cdn.minhgiang.pro/archive/favicon/android-icon-512x512.png",
       "type": "image/png",
       "sizes": "512x512"
@@ -94,33 +94,34 @@
       "type": "image/x-icon"
     }
   ],
-        "screenshots": [
-        {
-            "src": "https://cdn.minhgiang.pro/archive/pwa/scr1.png",
-            "type": "image/png",
-            "sizes": "859x1908"
-        },
-        {
-            "src": "https://cdn.minhgiang.pro/archive/pwa/scr2.png",
-            "type": "image/png",
-            "sizes": "859x1908"
-        },
-        {
-            "src": "https://cdn.minhgiang.pro/archive/pwa/scr3.png",
-            "type": "image/png",
-            "sizes": "859x1908"
-        },
-        {
-            "src": "https://cdn.minhgiang.pro/archive/pwa/scr4.png",
-            "type": "image/png",
-            "sizes": "859x1908"
-        },
-        {
-            "src": "https://cdn.minhgiang.pro/archive/pwa/scr5.png",
-            "type": "image/png",
-            "sizes": "859x1908"
-        }
-    ],
+  "screenshots": [
+    {
+      "src": "https://cdn.minhgiang.pro/archive/pwa/scr1.png",
+      "type": "image/png",
+      "sizes": "859x1908"
+    },
+    {
+      "src": "https://cdn.minhgiang.pro/archive/pwa/scr2.png",
+      "type": "image/png",
+      "sizes": "859x1908"
+    },
+    {
+      "src": "https://cdn.minhgiang.pro/archive/pwa/scr3.png",
+      "type": "image/png",
+      "sizes": "859x1908"
+    },
+    {
+      "src": "https://cdn.minhgiang.pro/archive/pwa/scr4.png",
+      "type": "image/png",
+      "sizes": "859x1908"
+    },
+    {
+      "src": "https://cdn.minhgiang.pro/archive/pwa/scr5.png",
+      "type": "image/png",
+      "sizes": "859x1908"
+    }
+  ],
+  "lang": "vi",
   "shortcuts": [
     {
       "name": "Thủ thuật",
@@ -133,4 +134,11 @@
       "description": "Tin tức về Khoa học - Công nghệ."
     }
   ],
+  "display_override": [
+    "browser",
+    "fullscreen",
+    "minimal-ui",
+    "standalone",
+    "window-controls-overlay"
+  ]
 }
