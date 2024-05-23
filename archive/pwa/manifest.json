@@ -5,9 +5,9 @@
   "display": "fullscreen",
   "name": "Trang Tin Tức Tổng Hợp - Minh Giang Blog",
   "orientation": "any",
-  "scope": "/?utm_source=homescreen",
+  "scope": "https://www.minhgiang.pro/?utm_source=homescreen",
   "short_name": "Minh Giang Blog",
-  "start_url": "/?utm_source=homescreen",
+  "start_url": "https://www.minhgiang.pro/?utm_source=homescreen",
   "theme_color": "#1A73E8",
   "icons": [
     {
