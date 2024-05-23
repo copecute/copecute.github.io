@@ -121,17 +121,6 @@
             "sizes": "859x1908"
         }
     ],
-  "lang": "vi",
-    "features": [
-    "Cross Platform",
-    "fast",
-    "simple"
-  ],
-  "categories": [
-    "magazines",
-    "news",
-    "personalization"
-  ],
   "shortcuts": [
     {
       "name": "Thủ thuật",
@@ -144,7 +133,4 @@
       "description": "Tin tức về Khoa học - Công nghệ."
     }
   ],
-      serviceworker: {
-      src: "\/service-worker.js"
-    }
 }
