@@ -1,0 +1,140 @@
+{
+    "dir": "ltr",
+    "name": "Minh Giang Blog | Trang Tin Tức Tổng Hợp",
+    "short_name": "Minh Giang Blog",
+    "description": "Cập nhật tin tức mới và nóng nhất về Đời sống - Xã hội, Kinh tế, Thế giới, Thể thao, Giải trí, Công nghệ và nhiều lĩnh vực khác…",
+    "display": "standalone",
+    "prefer_related_applications": false,
+    "orientation": "any",
+    "start_url": "https://www.minhgiang.pro/",
+    "scope": "https://www.minhgiang.pro/",
+    "background_color": "#e0ac33",
+    "theme_color": "#e0ac33",
+    "icons": [
+        {
+            "src": "https://cdn.minhgiang.pro/archive/favicon/android-icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "density": "4.0",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "https://cdn.minhgiang.pro/archive/favicon/android-icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "density": "4.0",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "https://cdn.minhgiang.pro/archive/favicon/apple-icon-144x144.png",
+            "sizes": "144x144",
+            "type": "image/png",
+            "density": "3.0",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "https://cdn.minhgiang.pro/archive/favicon/android-icon-96x96.png",
+            "sizes": "96x96",
+            "type": "image/png",
+            "density": "2.0",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "https://cdn.minhgiang.pro/archive/favicon/android-icon-72x72.png",
+            "sizes": "72x72",
+            "type": "image/png",
+            "density": "1.5",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "https://cdn.minhgiang.pro/archive/favicon/android-icon-48x48.png",
+            "sizes": "48x48",
+            "type": "image/png",
+            "density": "1.0",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "https://cdn.minhgiang.pro/archive/favicon/android-icon-36x36.png",
+            "sizes": "36x36",
+            "type": "image/png",
+            "density": "0.75",
+            "purpose": "any maskable"
+        }
+    ],
+    "shortcuts": [
+        {
+            "name": "Minh Giang Blog",
+            "short_name": "Minh Giang Blog",
+            "description": "Cập nhật tin tức mới và nóng nhất về Đời sống - Xã hội, Kinh tế, Thế giới, Thể thao, Giải trí, Công nghệ và nhiều lĩnh vực khác…",
+            "url": "https://www.minhgiang.pro/",
+            "icons": [
+                {
+                    "src": "https://cdn.minhgiang.pro/archive/favicon/android-icon-192x192.png",
+                    "sizes": "192x192"
+                }
+            ]
+        },
+        {
+            "name": "Thủ thuật",
+            "short_name": "Thủ thuật",
+            "description": "Những bài viết về thủ thuật.",
+            "url": "https://www.minhgiang.pro/search/label/Thủ%20thuật",
+            "icons": [
+                {
+                    "src": "https://cdn.minhgiang.pro/archive/favicon/android-icon-192x192.png",
+                    "sizes": "192x192"
+                }
+            ]
+        },
+        {
+            "name": "Khoa học - Công nghệ",
+            "short_name": "Khoa học - Công nghệ",
+            "description": "Tin tức về Khoa học - Công nghệ.",
+            "url": "https://www.minhgiang.pro/search/label/Khoa%20học%20-%20Công%20nghệ",
+            "icons": [
+                {
+                    "src": "https://cdn.minhgiang.pro/archive/favicon/android-icon-192x192.png",
+                    "sizes": "192x192"
+                }
+            ]
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "https://cdn.minhgiang.pro/archive/pwa/scr1.png",
+            "type": "image/png",
+            "sizes": "859x1908"
+        },
+        {
+            "src": "https://cdn.minhgiang.pro/archive/pwa/scr2.png",
+            "type": "image/png",
+            "sizes": "859x1908"
+        },
+        {
+            "src": "https://cdn.minhgiang.pro/archive/pwa/scr3.png",
+            "type": "image/png",
+            "sizes": "859x1908"
+        },
+        {
+            "src": "https://cdn.minhgiang.pro/archive/pwa/scr4.png",
+            "type": "image/png",
+            "sizes": "859x1908"
+        },
+        {
+            "src": "https://cdn.minhgiang.pro/archive/pwa/scr5.png",
+            "type": "image/png",
+            "sizes": "859x1908"
+        }
+    ],
+    "lang": "vi",
+    "features": [
+        "Cross Platform",
+        "fast",
+        "simple"
+    ],
+    "categories": [
+        "magazines",
+        "news",
+        "personalization"
+    ]
+}
