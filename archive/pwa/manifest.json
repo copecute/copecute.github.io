@@ -6,8 +6,8 @@
     "display": "standalone",
     "prefer_related_applications": false,
     "orientation": "any",
-    "start_url": "https://www.minhgiang.pro/",
-    "scope": "https://www.minhgiang.pro/",
+    "start_url": "https://www.minhgiang.pro/?utm_source=homescreen",
+    "scope": "https://www.minhgiang.pro/?utm_source=homescreen",
     "background_color": "#e0ac33",
     "theme_color": "#e0ac33",
     "icons": [
@@ -61,6 +61,16 @@
             "purpose": "any maskable"
         }
     ],
+      "splash_screen": {
+    "full_screen_image": "https://cdn.minhgiang.pro/images/logo.png",
+    "full_screen_image_portrait": "https://cdn.minhgiang.pro/images/logo.png",
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff"
+  },
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff"
+}
     "shortcuts": [
         {
             "name": "Minh Giang Blog",
