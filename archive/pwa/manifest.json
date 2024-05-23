@@ -61,16 +61,6 @@
             "purpose": "any maskable"
         }
     ],
-      "splash_screen": {
-    "full_screen_image": "https://cdn.minhgiang.pro/images/logo.png",
-    "full_screen_image_portrait": "https://cdn.minhgiang.pro/images/logo.png",
-    "background_color": "#ffffff",
-    "theme_color": "#ffffff"
-  },
-  "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#ffffff"
-},
     "shortcuts": [
         {
             "name": "Minh Giang Blog",
@@ -147,6 +137,17 @@
         "news",
         "personalization"
     ],
+    
+      "splash_screen": {
+    "full_screen_image": "https://cdn.minhgiang.pro/images/logo.png",
+    "full_screen_image_portrait": "https://cdn.minhgiang.pro/images/logo.png",
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff"
+  },
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff"
+},
 serviceworker: {
       src: "https://www.minhgiang.pro/service-worker.js"
     }
