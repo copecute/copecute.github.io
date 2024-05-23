@@ -146,5 +146,8 @@
         "magazines",
         "news",
         "personalization"
-    ]
+    ],
+serviceworker: {
+      src: "https://www.minhgiang.pro/service-worker.js"
+    }
 }
