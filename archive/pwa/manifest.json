@@ -10,6 +10,11 @@
   "start_url": "/?utm_source=homescreen",
   "theme_color": "#1A73E8",
   "icons": [
+      {
+      "src": "//cdn.minhgiang.pro/archive/favicon/android-icon-512x512.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
     {
       "src": "//cdn.minhgiang.pro/archive/favicon/android-icon-192x192.png",
       "type": "image/png",
