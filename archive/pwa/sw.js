@@ -1,21 +1,117 @@
-self.addEventListener('push', function(event) {
-  console.log('[Service Worker] Push Received');
-  const title = 'Thông báo đến từ ứng dụng';
-  const options = {
-    body: event.data.text(),
-    icon: '//blogger.googleusercontent.com/img/a/AVvXsEiYorgTwvKTp7bjT_1O6HrAl2K4vYEcimlyzfv-0UNwF8x_ov7avCHuZoVdg6K-u2GhL7bOUOmL9DSC4YiBQOF82bmOxYFhmzcd_S15-AikwfL83vmYIAPuBtCPGeRsRfAiVw0REdGk-GZltwNDSWuKC-WFGvU1WwUCASD8CynnsGpOH91geRjUW2rVmC0=w301-h154-p-k-no-nu',
-    badge: '//cdn.minhgiang.pro/archive/favicon/android-icon-192x192.png'
+importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js');
+
+if (workbox) {
+  workbox.core.skipWaiting();
+  workbox.core.clientsClaim();
+  workbox.core.setCacheNameDetails({
+    prefix: 'thn-sw',
+    suffix: 'v22',
+    precache: 'install-time',
+    runtime: 'run-time'
+  });
+
+  const FALLBACK_HTML_URL = 'https://cdn.minhgiang.pro/archive/pwa/offline.html';
+  const version = workbox.core.cacheNames.suffix;
+
+  // Thêm vào cache cho các tài nguyên cố định
+  workbox.precaching.precacheAndRoute([
+    { url: FALLBACK_HTML_URL, revision: null },
+    { url: 'https://cdn.minhgiang.pro/archive/pwa/manifest.json', revision: null },
+    { url: '/favicon.ico', revision: null }
+  ]);
+
+  // Xử lý các loại tài nguyên khác
+  workbox.routing.setDefaultHandler(new workbox.strategies.NetworkOnly());
+
+  // Cache các tài nguyên CSS, JS, hình ảnh
+  workbox.routing.registerRoute(
+    new RegExp('.(?:css|js|png|gif|jpg|svg|ico)$'),
+    new workbox.strategies.CacheFirst({
+      cacheName: 'images-js-css-' + version,
+      plugins: [
+        new workbox.expiration.ExpirationPlugin({
+          maxAgeSeconds: 60 * 24 * 60 * 60, // 60 ngày
+          maxEntries: 200,
+          purgeOnQuotaError: true
+        })
+      ],
+    }), 'GET'
+  );
+
+  // Xử lý các trường hợp ngoại lệ
+  workbox.routing.setCatchHandler(({ event }) => {
+    switch (event.request.destination) {
+      case 'document':
+        return caches.match(FALLBACK_HTML_URL);
+      default:
+        return Response.error();
+    }
+  });
+
+  // Xử lý sự kiện activate để xoá cache cũ
+  self.addEventListener('activate', function(event) {
+    event.waitUntil(
+      caches
+        .keys()
+        .then(keys => keys.filter(key => !key.endsWith(version)))
+        .then(keys => Promise.all(keys.map(key => caches.delete(key))))
+    );
+  });
+
+  // Bổ sung phần mã mới để nhận tin từ Firebase và hiển thị thông báo
+  importScripts('https://www.gstatic.com/firebasejs/9.6.0/firebase-app.js');
+  importScripts('https://www.gstatic.com/firebasejs/9.6.0/firebase-messaging.js');
+
+  // Khởi tạo Firebase với cấu hình của bạn
+  const firebaseConfig = {
+    apiKey: "YOUR_API_KEY",
+    authDomain: "YOUR_AUTH_DOMAIN",
+    projectId: "YOUR_PROJECT_ID",
+    storageBucket: "YOUR_STORAGE_BUCKET",
+    messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+    appId: "YOUR_APP_ID"
   };
 
-  event.waitUntil(self.registration.showNotification(title, options));
-});
+  firebase.initializeApp(firebaseConfig);
+  const messaging = firebase.messaging();
 
-self.addEventListener('notificationclick', function(event) {
-  console.log('[Service Worker] Notification click Received.');
+  // Lắng nghe sự kiện nhận tin nhắn từ Firebase Cloud Messaging
+  self.addEventListener('push', function(event) {
+    const payload = event.data ? event.data.json() : {};
 
-  event.notification.close();
+    // Hiển thị thông báo cho người dùng
+    self.registration.showNotification(payload.notification.title, {
+      body: payload.notification.body,
+      icon: payload.notification.icon,
+      data: {
+        url: payload.notification.click_action
+      }
+    });
+  });
 
-  event.waitUntil(
-    clients.openWindow('https://www.minhgiang.pro')
-  );
-});
+  // Xử lý sự kiện click trên thông báo
+  self.addEventListener('notificationclick', function(event) {
+    event.notification.close();
+
+    // Mở URL được chỉ định khi người dùng nhấp vào thông báo
+    event.waitUntil(
+      clients.openWindow(event.notification.data.url)
+    );
+  });
+
+  // Đăng ký để nhận thông báo từ Firebase Cloud Messaging
+  messaging.onBackgroundMessage(function(payload) {
+    console.log('[Service Worker] Received background message ', payload);
+    // Hiển thị thông báo cho người dùng
+    self.registration.showNotification(payload.notification.title, {
+      body: payload.notification.body,
+      icon: payload.notification.icon,
+      data: {
+        url: payload.notification.click_action
+      }
+    });
+  });
+
+} else {
+  console.log('Oops! Workbox did not load');
+}
