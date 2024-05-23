@@ -122,6 +122,16 @@
         }
     ],
   "lang": "vi",
+    "features": [
+    "Cross Platform",
+    "fast",
+    "simple"
+  ],
+  "categories": [
+    "magazines",
+    "news",
+    "personalization"
+  ],
   "shortcuts": [
     {
       "name": "Thủ thuật",
@@ -133,5 +143,8 @@
       "url": "/search/label/Khoa%20học%20-%20Công%20nghệ",
       "description": "Tin tức về Khoa học - Công nghệ."
     }
-  ]
+  ],
+      serviceworker: {
+      src: "\/service-worker.js"
+    }
 }
