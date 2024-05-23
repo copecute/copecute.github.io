@@ -64,12 +64,13 @@ if (workbox) {
 
   // Khởi tạo Firebase với cấu hình của bạn
   const firebaseConfig = {
-    apiKey: "YOUR_API_KEY",
-    authDomain: "YOUR_AUTH_DOMAIN",
-    projectId: "YOUR_PROJECT_ID",
-    storageBucket: "YOUR_STORAGE_BUCKET",
-    messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-    appId: "YOUR_APP_ID"
+    apiKey: "AIzaSyCmBX3KYSElfzRkzOj2NtutU-Cav1H3baI",
+    authDomain: "minh-giang-blog.firebaseapp.com",
+    projectId: "minh-giang-blog",
+    storageBucket: "minh-giang-blog.appspot.com",
+    messagingSenderId: "827883992213",
+    appId: "1:827883992213:web:58ca4e76eeef0895bb179c",
+    measurementId: "G-E9B6GZT65G"
   };
 
   firebase.initializeApp(firebaseConfig);
