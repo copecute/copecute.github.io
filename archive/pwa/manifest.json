@@ -125,12 +125,12 @@
   "shortcuts": [
     {
       "name": "Thủ thuật",
-      "url": "/search/label/Thủ%20thuật",
+      "url": "https://www.minhgiang.pro/search/label/Thủ%20thuật",
       "description": "Những bài viết về thủ thuật."
     },
     {
       "name": "Khoa học - Công nghệ",
-      "url": "/search/label/Khoa%20học%20-%20Công%20nghệ",
+      "url": "https://www.minhgiang.pro/search/label/Khoa%20học%20-%20Công%20nghệ",
       "description": "Tin tức về Khoa học - Công nghệ."
     }
   ],
