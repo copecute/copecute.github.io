@@ -16,7 +16,7 @@ if (workbox) {
   workbox.precaching.precacheAndRoute([
     {url: FALLBACK_HTML_URL, revision: null},
     {url: 'https://cdn.minhgiang.pro/archive/pwa/manifest.json', revision: null},
-    {url: '/favicon.ico', revision: null}
+    {url: 'https://cdn.minhgiang.pro/archive/favicon/apple-icon-60x60.png', revision: null}
   ]);
 
   workbox.routing.setDefaultHandler(new workbox.strategies.NetworkOnly());
