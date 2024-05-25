@@ -1,144 +1,152 @@
 {
-  "background_color": "#1A73E8",
-  "description": "Cập nhật tin tức mới và nóng nhất về Đời sống - Xã hội, Kinh tế, Thế giới, Thể thao, Giải trí, Công nghệ và nhiều lĩnh vực khác…",
-  "dir": "auto",
-  "display": "fullscreen",
-  "name": "Trang Tin Tức Tổng Hợp - Minh Giang Blog",
-  "orientation": "any",
-  "scope": "https://www.minhgiang.pro/?utm_source=homescreen",
+  "dir": "ltr",
+  "name": "Minh Giang Blog - Trang Tin Tức Tổng Hợp",
   "short_name": "Minh Giang Blog",
+  "description": "Cập nhật tin tức mới và nóng nhất về Đời sống - Xã hội, Kinh tế, Thế giới, Thể thao, Giải trí, Công nghệ và nhiều lĩnh vực khác…",
+  "display": "standalone",
+  "prefer_related_applications": false,
+  "orientation": "any",
   "start_url": "https://www.minhgiang.pro/?utm_source=homescreen",
+  "scope": "https://www.minhgiang.pro/?utm_source=homescreen",
+  "background_color": "#FFF",
   "theme_color": "#1A73E8",
   "icons": [
     {
-      "src": "//cdn.minhgiang.pro/archive/favicon/android-icon-512x512.png",
+      "src": "https://cdn.minhgiang.pro/archive/favicon/android-icon-512x512.png",
+      "sizes": "512x512",
       "type": "image/png",
-      "sizes": "512x512"
+      "density": "4.0",
+      "purpose": "any maskable"
     },
     {
-      "src": "//cdn.minhgiang.pro/archive/favicon/android-icon-192x192.png",
+      "src": "https://cdn.minhgiang.pro/archive/favicon/android-icon-192x192.png",
+      "sizes": "192x192",
       "type": "image/png",
-      "sizes": "192x192"
+      "density": "4.0",
+      "purpose": "any maskable"
     },
     {
-      "src": "//cdn.minhgiang.pro/archive/favicon/favicon-32x32.png",
+      "src": "https://cdn.minhgiang.pro/archive/favicon/apple-icon-144x144.png",
+      "sizes": "144x144",
       "type": "image/png",
-      "sizes": "32x32"
+      "density": "3.0",
+      "purpose": "any maskable"
     },
     {
-      "src": "//cdn.minhgiang.pro/archive/favicon/favicon-96x96.png",
+      "src": "https://cdn.minhgiang.pro/archive/favicon/android-icon-96x96.png",
+      "sizes": "96x96",
       "type": "image/png",
-      "sizes": "96x96"
+      "density": "2.0",
+      "purpose": "any maskable"
     },
     {
-      "src": "//cdn.minhgiang.pro/archive/favicon/favicon-16x16.png",
+      "src": "https://cdn.minhgiang.pro/archive/favicon/android-icon-72x72.png",
+      "sizes": "72x72",
       "type": "image/png",
-      "sizes": "16x16"
+      "density": "1.5",
+      "purpose": "any maskable"
     },
     {
-      "src": "https://www.minhgiang.pro/favicon.ico",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "//cdn.minhgiang.pro/archive/favicon/apple-icon-57x57.png",
+      "src": "https://cdn.minhgiang.pro/archive/favicon/android-icon-48x48.png",
+      "sizes": "48x48",
       "type": "image/png",
-      "sizes": "57x57"
+      "density": "1.0",
+      "purpose": "any maskable"
     },
     {
-      "src": "//cdn.minhgiang.pro/archive/favicon/apple-icon-60x60.png",
+      "src": "https://cdn.minhgiang.pro/archive/favicon/android-icon-36x36.png",
+      "sizes": "36x36",
       "type": "image/png",
-      "sizes": "60x60"
+      "density": "0.75",
+      "purpose": "any maskable"
+    }
+  ],
+  "splash_screen": {
+    "full_screen_image": "https://cdn.minhgiang.pro/images/logo.png",
+    "full_screen_image_portrait": "https://cdn.minhgiang.pro/images/logo.png",
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff"
+  },
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "shortcuts": [
+    {
+      "name": "Minh Giang Blog",
+      "short_name": "Minh Giang Blog",
+      "description": "Cập nhật tin tức mới và nóng nhất về Đời sống - Xã hội, Kinh tế, Thế giới, Thể thao, Giải trí, Công nghệ và nhiều lĩnh vực khác…",
+      "url": "https://www.minhgiang.pro/",
+      "icons": [
+        {
+          "src": "https://cdn.minhgiang.pro/archive/favicon/android-icon-192x192.png",
+          "sizes": "192x192"
+        }
+      ]
     },
     {
-      "src": "//cdn.minhgiang.pro/archive/favicon/apple-icon-72x72.png",
-      "type": "image/png",
-      "sizes": "72x72"
+      "name": "Thủ thuật",
+      "short_name": "Thủ thuật",
+      "description": "Những bài viết về thủ thuật.",
+      "url": "https://www.minhgiang.pro/search/label/Thủ%20thuật",
+      "icons": [
+        {
+          "src": "https://cdn.minhgiang.pro/archive/favicon/android-icon-192x192.png",
+          "sizes": "192x192"
+        }
+      ]
     },
     {
-      "src": "//cdn.minhgiang.pro/archive/favicon/apple-icon-76x76.png",
-      "type": "image/png",
-      "sizes": "76x76"
-    },
-    {
-      "src": "//cdn.minhgiang.pro/archive/favicon/apple-icon-114x114.png",
-      "type": "image/png",
-      "sizes": "114x114"
-    },
-    {
-      "src": "//cdn.minhgiang.pro/archive/favicon/apple-icon-120x120.png",
-      "type": "image/png",
-      "sizes": "120x120"
-    },
-    {
-      "src": "//cdn.minhgiang.pro/archive/favicon/apple-icon-144x144.png",
-      "type": "image/png",
-      "sizes": "144x144"
-    },
-    {
-      "src": "//cdn.minhgiang.pro/archive/favicon/apple-icon-152x152.png",
-      "type": "image/png",
-      "sizes": "152x152"
-    },
-    {
-      "src": "//cdn.minhgiang.pro/archive/favicon/apple-icon-180x180.png",
-      "type": "image/png",
-      "sizes": "180x180"
-    },
-    {
-      "src": "//cdn.minhgiang.pro/archive/favicon/ms-icon-144x144.png",
-      "type": "image/png",
-      "sizes": "144x144"
-    },
-    {
-      "src": "/favicon.ico",
-      "type": "image/x-icon"
+      "name": "Khoa học - Công nghệ",
+      "short_name": "Khoa học - Công nghệ",
+      "description": "Tin tức về Khoa học - Công nghệ.",
+      "url": "https://www.minhgiang.pro/search/label/Khoa%20học%20-%20Công%20nghệ",
+      "icons": [
+        {
+          "src": "https://cdn.minhgiang.pro/archive/favicon/android-icon-192x192.png",
+          "sizes": "192x192"
+        }
+      ]
     }
   ],
   "screenshots": [
     {
       "src": "https://cdn.minhgiang.pro/archive/pwa/scr1.png",
       "type": "image/png",
-      "sizes": "859x1908"
+      "sizes": "451x860"
     },
     {
       "src": "https://cdn.minhgiang.pro/archive/pwa/scr2.png",
       "type": "image/png",
-      "sizes": "859x1908"
+      "sizes": "474x870"
     },
     {
       "src": "https://cdn.minhgiang.pro/archive/pwa/scr3.png",
       "type": "image/png",
-      "sizes": "859x1908"
+      "sizes": "465x855"
     },
     {
       "src": "https://cdn.minhgiang.pro/archive/pwa/scr4.png",
       "type": "image/png",
-      "sizes": "859x1908"
+      "sizes": "458x857"
     },
     {
       "src": "https://cdn.minhgiang.pro/archive/pwa/scr5.png",
       "type": "image/png",
-      "sizes": "859x1908"
+      "sizes": "471x857"
     }
   ],
   "lang": "vi",
-  "shortcuts": [
-    {
-      "name": "Thủ thuật",
-      "url": "https://www.minhgiang.pro/search/label/Thủ%20thuật",
-      "description": "Những bài viết về thủ thuật."
-    },
-    {
-      "name": "Khoa học - Công nghệ",
-      "url": "https://www.minhgiang.pro/search/label/Khoa%20học%20-%20Công%20nghệ",
-      "description": "Tin tức về Khoa học - Công nghệ."
-    }
+  "features": [
+    "Cross Platform",
+    "fast",
+    "simple"
   ],
-  "display_override": [
-    "browser",
-    "fullscreen",
-    "minimal-ui",
-    "standalone",
-    "window-controls-overlay"
-  ]
+  "categories": [
+    "magazines",
+    "news",
+    "personalization"
+  ],
+  "serviceworker": {
+    "src": "https://www.minhgiang.pro/service-worker.js"
+  }
 }
