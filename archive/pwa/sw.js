@@ -74,9 +74,12 @@ if (workbox) {
   // Lắng nghe sự kiện notificationclick và mở URL khi thông báo được nhấp vào
   self.addEventListener('notificationclick', function(event) {
     event.notification.close();
-    event.waitUntil(
-      clients.openWindow(event.notification.data.url)
-    );
+    var url = event.notification.data.url;
+    if (url && url !== 'none') {
+      event.waitUntil(
+        clients.openWindow(url)
+      );
+    }
   });
 
 } else {
