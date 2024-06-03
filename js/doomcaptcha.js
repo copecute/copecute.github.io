@@ -20,7 +20,7 @@ if (captcha_label) {
 document.write(captcha_html);
 
 window.addEventListener('message', function (e) {
-    if (e.origin.indexOf('vivirenremoto.github.io') > -1) {
+    if (e.origin.indexOf('cdn.minhgiang.pro') > -1) {
         captcha_done = true;
         document.getElementById('doom_captcha').style.borderColor = 'black';
     }
