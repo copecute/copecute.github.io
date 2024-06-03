@@ -8,26 +8,26 @@
 
     <link rel="shortcut icon" href="favicon.ico"/>
 
-    <link rel="prefetch" href="images/doomcaptcha/pisga0.png" />
-    <link rel="prefetch" href="images/doomcaptcha/shotgun.gif" />
-    <link rel="prefetch" href="images/doomcaptcha/sound/music2.mp3" />
-    <link rel="prefetch" href="images/doomcaptcha/sound/dspistol.wav" />
-    <link rel="prefetch" href="images/doomcaptcha/sound/dsdshtgn.wav" />
-    <link rel="prefetch" href="images/doomcaptcha/sound/ok.mp3" />
+    <link rel="prefetch" href="archive/doomcaptcha/pisga0.png" />
+    <link rel="prefetch" href="archive/doomcaptcha/shotgun.gif" />
+    <link rel="prefetch" href="archive/doomcaptcha/sound/music2.mp3" />
+    <link rel="prefetch" href="archive/doomcaptcha/sound/dspistol.wav" />
+    <link rel="prefetch" href="archive/doomcaptcha/sound/dsdshtgn.wav" />
+    <link rel="prefetch" href="archive/doomcaptcha/sound/ok.mp3" />
     
-    <link rel="prefetch" href="images/doomcaptcha/sound/1_kill.wav" />
-    <link rel="prefetch" href="images/doomcaptcha/sound/2_kill.wav" />
-    <link rel="prefetch" href="images/doomcaptcha/sound/3_kill.wav" />
-    <link rel="prefetch" href="images/doomcaptcha/sound/4_kill.wav" />
-    <link rel="prefetch" href="images/doomcaptcha/sound/5_kill.wav" />
-    <link rel="prefetch" href="images/doomcaptcha/sound/6_kill.wav" />
+    <link rel="prefetch" href="archive/doomcaptcha/sound/1_kill.wav" />
+    <link rel="prefetch" href="archive/doomcaptcha/sound/2_kill.wav" />
+    <link rel="prefetch" href="archive/doomcaptcha/sound/3_kill.wav" />
+    <link rel="prefetch" href="archive/doomcaptcha/sound/4_kill.wav" />
+    <link rel="prefetch" href="archive/doomcaptcha/sound/5_kill.wav" />
+    <link rel="prefetch" href="archive/doomcaptcha/sound/6_kill.wav" />
 
-    <link rel="prefetch" href="images/doomcaptcha/sound/1_kill.wav" />
-    <link rel="prefetch" href="images/doomcaptcha/sound/2_kill.wav" />
-    <link rel="prefetch" href="images/doomcaptcha/sound/3_kill.wav" />
-    <link rel="prefetch" href="images/doomcaptcha/sound/4_kill.wav" />
-    <link rel="prefetch" href="images/doomcaptcha/sound/5_kill.wav" />
-    <link rel="prefetch" href="images/doomcaptcha/sound/6_kill.wav" />
+    <link rel="prefetch" href="archive/doomcaptcha/sound/1_kill.wav" />
+    <link rel="prefetch" href="archive/doomcaptcha/sound/2_kill.wav" />
+    <link rel="prefetch" href="archive/doomcaptcha/sound/3_kill.wav" />
+    <link rel="prefetch" href="archive/doomcaptcha/sound/4_kill.wav" />
+    <link rel="prefetch" href="archive/doomcaptcha/sound/5_kill.wav" />
+    <link rel="prefetch" href="archive/doomcaptcha/sound/6_kill.wav" />
 
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 </head>
@@ -58,14 +58,14 @@
 
 body {
     overflow-x: hidden;
-    background: black url('images/doomcaptcha/backgrounds/1.png');
+    background: black url('archive/doomcaptcha/backgrounds/1.png');
     background-size: cover;
     background-position: top center;
     touch-action: pan-x pan-y;
     background-repeat:no-repeat;
     width: 100%;
     height: 100%;
-    cursor: url(images/doomcaptcha/cursor2.png) 16 16, default !important;
+    cursor: url(archive/doomcaptcha/cursor2.png) 16 16, default !important;
 }
 
 button{background:none;border:1px #fff solid;color:#fff;cursor:pointer;margin-top:17px;}
@@ -75,11 +75,11 @@ button{background:none;border:1px #fff solid;color:#fff;cursor:pointer;margin-to
 #btn_again{display:block;margin-top:0;border:0;}
 
 #cheatcode {
-    cursor: url(images/doomcaptcha/cursor2.png), default !important;
+    cursor: url(archive/doomcaptcha/cursor2.png), default !important;
 }
 
 .enemy{
-    cursor: url(images/doomcaptcha/cursor3.png) 16 16, default!important;
+    cursor: url(archive/doomcaptcha/cursor3.png) 16 16, default!important;
     top:50%;
     margin-top:-57px;
     background-repeat:no-repeat;
@@ -117,7 +117,7 @@ button{background:none;border:1px #fff solid;color:#fff;cursor:pointer;margin-to
 <div id="game" style="position:fixed;height:100%;width:100%;left:0px;top:0px;" onclick="handleMiss(event, this);">
     <div class="enemy" style="display:none;z-index:1;position:fixed;left:120px;"></div>
 
-    <div id="gun" style="pointer-events:none;z-index:2;background:url('images/doomcaptcha/pisga0.png');background-position:left bottom;background-repeat:no-repeat;width:100%;height:100px;position:fixed;left:0;bottom:-10px;"></div>
+    <div id="gun" style="pointer-events:none;z-index:2;background:url('archive/doomcaptcha/pisga0.png');background-position:left bottom;background-repeat:no-repeat;width:100%;height:100px;position:fixed;left:0;bottom:-10px;"></div>
 
     <table id="countdown" cellpadding="0" cellspacing="0" border="0" style="display:none;z-index:2;position:fixed;left:0;bottom:0;width:100%;height:7px;"><td id="percent" bgcolor="red" width="100%"></td><td bgcolor="black"></td></table>
 </div>
@@ -132,19 +132,19 @@ button{background:none;border:1px #fff solid;color:#fff;cursor:pointer;margin-to
 </div>
 
 <audio id="sound_music" loop>
-    <source src="images/doomcaptcha/sound/music2.mp3" type="audio/mp3">
+    <source src="archive/doomcaptcha/sound/music2.mp3" type="audio/mp3">
 </audio>
 
 <audio id="sound_shoot">
-    <source src="images/doomcaptcha/sound/dspistol.wav" type="audio/wav">
+    <source src="archive/doomcaptcha/sound/dspistol.wav" type="audio/wav">
 </audio>
 
 <audio id="sound_shootshotgun">
-    <source src="images/doomcaptcha/sound/dsdshtgn.wav" type="audio/wav">
+    <source src="archive/doomcaptcha/sound/dsdshtgn.wav" type="audio/wav">
 </audio>
 
 <audio id="sound_ok">
-    <source src="images/doomcaptcha/sound/ok.mp3" type="audio/mp3">
+    <source src="archive/doomcaptcha/sound/ok.mp3" type="audio/mp3">
 </audio>
 
 <audio id="sound_death" src="" type="audio/wav">
@@ -193,21 +193,21 @@ function handleShootAnim() {
     flash = true;
     if (!idkfa) {
         playSound('shoot');
-        $('#gun').css('background', 'rgba(0, 0, 0, 0) url("images/doomcaptcha/pistol-flash.png") no-repeat scroll left bottom');
+        $('#gun').css('background', 'rgba(0, 0, 0, 0) url("archive/doomcaptcha/pistol-flash.png") no-repeat scroll left bottom');
         $('#gun').css('left',"-=22");
     } else {
         playSound('shootshotgun');
-        $('#gun').css('background', 'rgba(0, 0, 0, 0) url("images/doomcaptcha/shotgun-flash.png") no-repeat scroll left bottom');
+        $('#gun').css('background', 'rgba(0, 0, 0, 0) url("archive/doomcaptcha/shotgun-flash.png") no-repeat scroll left bottom');
         //$('#gun').css('left',"-=33");
         $('#gun').css('bottom',"0px");
     }
     setTimeout(function() {
         flash = false;
         if (!idkfa) {
-            $('#gun').css('background', 'rgba(0, 0, 0, 0) url("images/doomcaptcha/pisga0.png") no-repeat scroll left bottom');
+            $('#gun').css('background', 'rgba(0, 0, 0, 0) url("archive/doomcaptcha/pisga0.png") no-repeat scroll left bottom');
             $('#gun').css('left',"+=22");
         } else {
-            $('#gun').css('background', 'rgba(0, 0, 0, 0) url("images/doomcaptcha/sht2a0.png") no-repeat scroll left bottom');
+            $('#gun').css('background', 'rgba(0, 0, 0, 0) url("archive/doomcaptcha/sht2a0.png") no-repeat scroll left bottom');
             //$('#gun').css('left',"+=33");
             $('#gun').css('bottom',"-10px");
         }
@@ -230,10 +230,10 @@ $('.enemy').click(function() {
         handleShootAnim();
 
         if (sound_on) {
-            $('#sound_death').attr("src", "images/doomcaptcha/sound/" + id_enemy + "_kill.wav");
+            $('#sound_death').attr("src", "archive/doomcaptcha/sound/" + id_enemy + "_kill.wav");
             $('#sound_death')[0].play();
         }
-        $('.enemy').css('background-image', "url('images/doomcaptcha/enemies/" + id_enemy + "_dead.png')");
+        $('.enemy').css('background-image', "url('archive/doomcaptcha/enemies/" + id_enemy + "_dead.png')");
         
 
         total_kills++;
@@ -287,7 +287,7 @@ function randomNumber(min, max) {
 
 function showEnemy() {
     id_enemy = randomNumber(1, total_enemies);
-    $('.enemy').css('background-image', "url('images/doomcaptcha/enemies/" + id_enemy + "_normal.png')").css('left', randomNumber(0, screen_width-enemy_width)).show();
+    $('.enemy').css('background-image', "url('archive/doomcaptcha/enemies/" + id_enemy + "_normal.png')").css('left', randomNumber(0, screen_width-enemy_width)).show();
 }
 
 function postSize(height) {
@@ -373,13 +373,13 @@ $('#cheatcode').keyup(function() {
     }
     if ($(this).css('opacity', 1).val().toUpperCase() == 'IDKFA') {
         idkfa = true;
-        document.getElementById("gun").style.backgroundImage='url("images/doomcaptcha/sht2a0.png"';
+        document.getElementById("gun").style.backgroundImage='url("archive/doomcaptcha/sht2a0.png"';
         $('#cheatcode').val('').hide();
     }
 });
 
 function setRandomBackground(){
-    $('body').css('background-image', "url('images/doomcaptcha/backgrounds/" + randomNumber(1, total_backgrounds) + ".png')" );
+    $('body').css('background-image', "url('archive/doomcaptcha/backgrounds/" + randomNumber(1, total_backgrounds) + ".png')" );
 }
 
 $(function() {
@@ -392,17 +392,17 @@ $(function() {
 
     for (var i = 1; i <= total_backgrounds; i++) {
         var image_aux = new Image();
-        image_aux.src = 'images/doomcaptcha/backgrounds/' + i + '.png';
+        image_aux.src = 'archive/doomcaptcha/backgrounds/' + i + '.png';
         images_preload.push(image_aux); 
     }
 
     for (var i = 1; i <= total_enemies; i++) {
         var image_aux = new Image();
-        image_aux.src = 'images/doomcaptcha/enemies/' + i + '_normal.png';
+        image_aux.src = 'archive/doomcaptcha/enemies/' + i + '_normal.png';
         images_preload.push(image_aux); 
 
         image_aux = new Image();
-        image_aux.src = 'images/doomcaptcha/enemies/' + i + '_dead.png';
+        image_aux.src = 'archive/doomcaptcha/enemies/' + i + '_dead.png';
         images_preload.push(image_aux); 
     }
 
