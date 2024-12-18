@@ -8,8 +8,8 @@
   "orientation": "any",
   "start_url": "https://www.minhgiang.pro/?utm_source=homescreen",
   "scope": "https://www.minhgiang.pro/?utm_source=homescreen",
-  "background_color": "#FFF",
-  "theme_color": "#1A73E8",
+  "background_color": "##ffffff",
+  "theme_color": "##ffffff",
   "icons": [
     {
       "src": "https://cdn.minhgiang.pro/archive/favicon/android-icon-512x512.png",
